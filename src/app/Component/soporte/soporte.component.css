@@ -1,0 +1,53 @@
+.soporte{
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    left: 80%;
+}
+.clicker{
+    background-color: #a11fdd5e;
+    width: 250px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 1rem 1rem 0 0;
+    cursor: pointer;
+}
+.clicker:hover{
+    background-color: #a11fdde8;
+    transition: .5s;
+}
+.textos{
+    position: relative;
+    left: -150px;
+    background-color: #a11fdd5e;
+    overflow: hidden;
+    height: 0px;
+    animation: Active;
+    transition: .5s;
+    width: 400px;
+}
+.mensaje-box{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.329);
+}
+.mensaje{
+    background-color: #a11fdd91;
+    border: 1px solid rgba(255, 255, 255, 0.329);
+    border-radius: .5rem;
+    width: 95%;
+    height: 35px;
+    margin: 10px;
+}
+.active{
+    height: 600px;
+    animation: Active;
+    transition: .5s;
+}
+@keyframes Active{
+    from{height: 0px;}
+    to {height: 600px;}
+  }

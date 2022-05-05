@@ -1,0 +1,90 @@
+.centralPag{
+    background-color: rgb(36, 36, 36);
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 2200px;
+    min-width: 1280px;
+}
+.Description{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    min-height: 720px;
+    min-width: 1280px;
+}
+.Description.Compra{
+    justify-content: right;
+}
+.Description.Diseña{
+    justify-content: left;
+}
+.decoracion{
+    position: absolute;
+    background-image: linear-gradient(to bottom, #040005be, #ac45db65),url(/assets/img/Compra.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.342);
+    border-radius: 5rem;
+    width: 200%;
+    height: 60vh;
+    min-height: 450px;
+}
+
+.Compra .decoracion{
+    left: 30%;
+}
+.Diseña .decoracion{
+    right: 30%;
+}
+
+.box{
+    position: relative;
+    z-index: 1;
+    padding-top: .5rem;
+    width: 45%;
+    height: 50%;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.text-box{
+    display: flex;
+    align-items: center;
+    background-color: #a11fdd9c;
+    border-radius: 3rem;
+    font-size: 2vh;
+    line-height: 50px;
+    padding: 1.5rem;
+    height: 80%;
+    width: 100%;
+}
+
+.text{
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+}
+.Sends{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #ca70f37e, #ac45db65),url(/assets/img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+.content{
+    display: flex;
+}
+.title{
+    margin-bottom: 50px;
+}
+.Send{
+    text-align: center;
+}

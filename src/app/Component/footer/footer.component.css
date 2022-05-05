@@ -1,0 +1,20 @@
+footer{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    min-width: 1280px;
+    justify-content: space-between;
+    background-color: rgb(36, 36, 36);
+    height: 10px;
+    padding: 3rem;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+
+}
+.acerca{
+    margin-left: 15px;
+}
+.acerca:hover{
+    color: #d080f5;
+    transition: .75s;
+}

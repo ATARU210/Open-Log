@@ -1,0 +1,106 @@
+header{
+    position: relative;
+    background-color: #a11fdd;
+    height: 60px;
+    padding-top: .1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+.header1{
+    display: flex;
+    width: 90%;
+    min-width: 700px;
+    position: relative;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+    font-family:'Inspiration', cursive ;
+    font-size: 35px;
+    cursor: pointer;
+}
+.logo img{
+    width: 65px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.logo p{
+    margin-top: 5px;
+}
+.title{
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+.material-icons-outlined{
+    font-size: 30px;
+    margin-right: 15px;
+    cursor: pointer; 
+}
+.LogIn{
+    display: flex;
+    padding: .3rem;
+}
+.optionBar{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 700px;
+    height: 30px;
+    font-size: 25px;
+    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.986);;
+}
+.option{
+    background-color: rgb(165, 19, 250);
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.021);
+    margin: 0px;
+    width: 50%;
+    height: 100%;
+    box-shadow: inset 0px -15px 50px -10px rgba(0, 0, 0, 0.459);
+}
+.option:hover{
+    background-color: #b824fd;
+    transition: .5s;
+}
+#pedidos{
+    background-color: rgb(36, 36, 36);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0px;
+    height: 100vh;
+    overflow: hidden;
+    animation: Active;
+    transition: .5s;
+}
+#pedidos.active{
+    width: 300px;
+    border-left: 1px solid rgba(255, 255, 255, 0.205);
+    animation: Active;
+    transition: .5s;
+}
+.cerrar{
+    display: inline;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 0.082);
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    padding: .15rem .5rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+@keyframes Active{
+    from{width: 0px;}
+    to {width: 300px;}
+  }

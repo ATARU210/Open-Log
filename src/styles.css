@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Inspiration&family=Satisfy&display=swap');
+/*font-family: 'Inspiration', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Montserrat', sans-serif;*/
+/* {} */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    line-height: 35px;
+}
+.title{
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}

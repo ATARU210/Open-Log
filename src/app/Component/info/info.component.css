@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+    background-color: rgb(36, 36, 36);
+    height: 100vh;
+    width: 100%;
+    padding-top: 150px;
+    justify-content: center;
+}
+.enlaces{
+    width: 15%;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    border-right: 2px solid rgba(255, 255, 255, 0.205);
+}
+.enlace{
+    display: inline-block;
+    margin: 2rem;
+    cursor: pointer;
+}
+.contenido{
+    width: 85%;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.tittle{
+    padding: 5rem;
+}
+.enlace:hover{
+    color: #d080f5;
+    transition: .75s;
+}

@@ -1,0 +1,59 @@
+.background{
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    display: flex;
+    background-color:rgba(36, 36, 36, 0.808);
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+.box{
+    background-color: rgb(36, 36, 36);
+    width: 400px;
+    height: 600px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.205);
+    border-radius: 1rem;
+}
+.box p{
+    font-size: 10px;
+    text-align: right;
+}
+.box a{
+    text-decoration: underline;
+}
+.title{
+    padding: 1rem;
+}
+label{
+    display: block;
+    padding: 1rem;
+}
+.inicioS input {
+    width: 90%;
+    height: 50px;
+    margin: 1rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+}
+
+.inicioS input[type="text"], .inicioS input[type="password"]{
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+.inicioS input[type="submit"]{
+    background-color: rgba(255, 255, 255, 0.644);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgb(19, 18, 18);
+    margin-top: 4rem;
+}
+@keyframes fade {
+    from{opacity: 0}
+    to {opacity: 1;}
+  }
