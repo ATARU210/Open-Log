@@ -18,7 +18,7 @@
     background-color: #a11fdde8;
     transition: .5s;
 }
-.textos{
+.texts{
     position: relative;
     left: -150px;
     background-color: #a11fdd5e;
@@ -27,23 +27,35 @@
     animation: Active;
     transition: .5s;
     width: 400px;
+    border-radius: 1rem 0 0 0;
 }
-.mensaje-box{
-    position: absolute;
-    bottom: 0px;
+.message-supp{
+    background-color: #a11fdd75;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 20px;
+}
+.info-box{
+    display: flex;
+}
+.message-box{
     width: 100%;
     border-top: 1px solid rgba(255, 255, 255, 0.329);
 }
-.mensaje{
+.message{
     background-color: #a11fdd91;
     border: 1px solid rgba(255, 255, 255, 0.329);
     border-radius: .5rem;
+    color: white;
     width: 95%;
-    height: 35px;
+    height: 50px;
     margin: 10px;
 }
+.message::placeholder{
+    color: rgba(255, 255, 255, 0.493);
+}
 .active{
-    height: 600px;
+    height: 450px;
     animation: Active;
     transition: .5s;
 }

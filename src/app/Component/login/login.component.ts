@@ -9,13 +9,14 @@ import { LoginService } from 'src/app/Services/login.service';
 export class LoginComponent implements OnInit {
   
   validateClick:boolean = true;
+  Register:boolean = false;
+
 
   constructor(private modal:LoginService) { }
 
   ngOnInit(): void {
 
   }
-
   clickBox(){
 
     this.validateClick = false;
@@ -28,6 +29,16 @@ export class LoginComponent implements OnInit {
     }
     else{
       this.validateClick = true;
+    }
+  }
+
+  clickLink(){
+    this.clickBox()
+    if(this.Register===false){
+      this.Register=true
+    }
+    else{
+      this.Register = false
     }
   }
 }
