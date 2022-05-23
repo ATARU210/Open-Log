@@ -3,71 +3,76 @@
     top: 0px;
     z-index: 200;
     display: flex;
-    background-color:rgba(36, 36, 36, 0.808);
+    background-color:rgba(36, 36, 36, 0.658);
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    animation-name: fade;
-    animation-duration: 1s;
 }
 .box{
     background-color: rgb(36, 36, 36);
     width: 400px;
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.205);
-    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.575);
+    border-radius: .5rem;
+
 }
 .register{
     width: 800px;
+    box-sizing: content-box;
 }
 .box p{
     font-size: 10px;
     text-align: right;
+
 }
 .box a{
     text-decoration: underline;
     cursor: pointer;
+
 }
 .title{
-    padding: 1rem;
+    padding: .5rem;
+
 }
 label{
     display: block;
-    padding: 1rem;
+    padding: .5rem;
+
 }
 .inicioS{
     display: flex;
     flex-direction: column;
+
 }
 .box-form{
     display: flex;
     justify-content: center;
 }
 .box-form div{
-    width: 50%;
+    width: 100%;
+    margin: 0.1rem;
 }
-.inicioS input {
+
+input {
     background-color: transparent;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    width: 90%;
-    height: 50px;
-    margin: 1rem;
-    border-radius: .5rem;
+    width: 100%;
+    height: 40px;
+    margin-top: .75rem;
+    border-radius: .2rem;
     border: 1px solid rgba(255, 255, 255, 0.39);
     color: white;
+
 }
 
-.inicioS input[type="submit"]{
+input[type="submit"]{
     background-color: rgba(255, 255, 255, 0.644);
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: rgb(19, 18, 18);
     margin-top: 4rem;
+
 }
-@keyframes fade {
-    from{opacity: 0}
-    to {opacity: 1;}
-  }

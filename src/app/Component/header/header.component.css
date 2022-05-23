@@ -1,14 +1,15 @@
 header{
     position: relative;
-    background-color: #a11fdd;
+    background-color: #8926b8;
     height: 60px;
     padding-top: .1rem;
     padding-bottom: 1rem;
     width: 100%;
     position: fixed;
     z-index: 10;
+    box-shadow: 0px 15px 70px 5px #8125ac;
 }
-.header1{
+.header{
     display: flex;
     width: 90%;
     min-width: 700px;
@@ -56,21 +57,23 @@ a{
     min-width: 700px;
     height: 30px;
     font-size: 25px;
-    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.986);;
 }
 .option{
-    background-color: rgb(165, 19, 250);
+    background-color: #8125ac;
     font-family: 'Satisfy', cursive;
     font-size: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.021);
+    border: 1px solid rgba(255, 255, 255, 0.205);
     margin: 0px;
     width: 50%;
     height: 100%;
-    box-shadow: inset 0px -15px 50px -10px rgba(0, 0, 0, 0.459);
 }
 .option:hover{
-    background-color: #b824fd;
+    background-color: #c444ff;
     transition: .5s;
+}
+.active-option{
+    background-color: #c444ff;
+    border-top: none;
 }
 #pedidos{
     background-color: rgb(36, 36, 36);

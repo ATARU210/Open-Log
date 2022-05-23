@@ -1,5 +1,5 @@
 <div class="background" (click)="closeLogin()" >
-    <div class="box" (click)="clickBox()" *ngIf="!Register">
+   <div class="box" (click)="clickBox()" *ngIf="!Register">
         <p class="registro">Tienes una cuenta?<a (click)="clickLink()">Registrate</a> </p>
         <h1 class="title">Inicio de sesion</h1>
         <form class="inicioS">
@@ -14,6 +14,22 @@
         <p class="registro">Ya tienes una cuenta?<a (click)="clickLink()">Inicia sesion</a> </p>
         <h1 class="title">Registro</h1>
         <form class="inicioS">
+            <div class="box-form">
+                <div>
+                    <label for="name">Nombres</label>
+                    <div class="box-form">
+                        <input id="name" type="text" placeholder="Escribir nombre de usuario">
+                        <input type="text" placeholder="Escribir nombre de usuario">
+                    </div>
+                </div>
+                <div>
+                    <label for="lastname">Apellidos</label>
+                    <div class="box-form">
+                        <input id="lastname" type="text" placeholder="Escribir nombre de usuario">
+                        <input type="text" placeholder="Escribir nombre de usuario">
+                    </div>
+                </div>
+            </div>
             <div class="box-form">
                 <div>
                     <label for="usernameR">Nombre de Usuario</label>
@@ -42,5 +58,5 @@
                 <input type="submit"> 
             </div>
         </form>
-    </div>
+    </div> 
 </div>

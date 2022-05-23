@@ -10,51 +10,32 @@ export class InfoComponent implements OnInit {
 
   title:string="Open Log"
   text:string="lorem"
-  id!:number
+  id!:string
 
   constructor(private readonly route:ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.queryParams.subscribe(
-      (params: Params) => {
-        this.id = parseInt(params['id'])
-      }
-    )
-    
-      if(this.id===0){
-        this.title="Open Log"
-        this.text="lorem"
-      }
-      if(this.id===1){
-        this.title="Copyright"
-        this.text="lorem"
-      }
-      if(this.id===2){
-        this.title="Privacidad"
-        this.text="lorem"
-      }
-      if(this.id===3){
-        this.title="Contacto"
-        this.text="lorem"
-      }
-    
+    this.id=this.route.snapshot.params['id']
+    console.log(this.id)
+    this.changeContent(this.id)
   }
+  
 
 
-  changeContent(id:number){
-    if(id===0){
+  changeContent(id:string){
+    if(id==='0'){
       this.title="Open Log"
       this.text="lorem"
     }
-    if(id===1){
+    if(id==='1'){
       this.title="Copyright"
       this.text="lorem"
     }
-    if(id===2){
+    if(id==='2'){
       this.title="Privacidad"
       this.text="lorem"
     }
-    if(id===3){
+    if(id==='3'){
       this.title="Contacto"
       this.text="lorem"
     }

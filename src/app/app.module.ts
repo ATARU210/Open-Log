@@ -20,7 +20,8 @@ const appRoutes:Routes=[
   {path:'', component:InicioComponent},
   {path:'Compra', component:ComprasComponent},
   {path:'Diseño', component:DesingComponent},
-  {path:'info', component:InfoComponent}
+  {path:'info', component:InfoComponent},
+  {path:'info/:id', component:InfoComponent}
   
 ]
 

@@ -1,11 +1,11 @@
 .soporte{
     position: fixed;
     bottom: 0px;
-    z-index: 10;
+    z-index: 3;
     left: 80%;
 }
 .clicker{
-    background-color: #a11fdd5e;
+    background-color: #8a26b883;
     width: 250px;
     padding-left: 5rem;
     padding-right: 5rem;
@@ -15,13 +15,13 @@
     cursor: pointer;
 }
 .clicker:hover{
-    background-color: #a11fdde8;
+    background-color: #8926b8;
     transition: .5s;
 }
 .texts{
     position: relative;
     left: -150px;
-    background-color: #a11fdd5e;
+    background-color: #8a26b883;
     overflow: hidden;
     height: 0px;
     animation: Active;
@@ -30,7 +30,7 @@
     border-radius: 1rem 0 0 0;
 }
 .message-supp{
-    background-color: #a11fdd75;
+    background-color: #8926b8;
     padding: 1rem;
     border-radius: 2rem;
     margin: 20px;
@@ -43,7 +43,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.329);
 }
 .message{
-    background-color: #a11fdd91;
+    background-color: #8926b8;
     border: 1px solid rgba(255, 255, 255, 0.329);
     border-radius: .5rem;
     color: white;

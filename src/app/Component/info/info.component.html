@@ -1,14 +1,14 @@
 <main class="main">
     <nav class="enlaces">
-        <a class="enlace" (click)="changeContent(0)">Acerca de nosotros</a><br>
-        <a class="enlace" (click)="changeContent(1)">Copyright</a><br>
-        <a class="enlace" (click)="changeContent(2)">Privacidad</a><br>
-        <a class="enlace" (click)="changeContent(3)">Contacto</a><br>
+        <a class="enlace" (click)="changeContent('0')">Acerca de nosotros</a><br>
+        <a class="enlace" (click)="changeContent('1')">Copyright</a><br>
+        <a class="enlace" (click)="changeContent('2')">Privacidad</a><br>
+        <a class="enlace" (click)="changeContent('3')">Contacto</a><br>
     </nav>
     <div class="contenido">
         <h1 class="tittle">{{title}}</h1>
         <p>
-            {{text}}
+            {{text}}{{id}}
         </p>
     </div>
 </main>

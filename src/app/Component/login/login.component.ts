@@ -8,6 +8,7 @@ import { LoginService } from 'src/app/Services/login.service';
 })
 export class LoginComponent implements OnInit {
   
+  Login:boolean = false;
   validateClick:boolean = true;
   Register:boolean = false;
 

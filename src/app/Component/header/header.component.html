@@ -1,13 +1,13 @@
 <header >
-    <div class="header1">
-        <a href="" class="address-Logo">
+    <div class="header">
+        <a routerLink="/" class="address-Logo">
             <div class="logo">
                 <img src="assets/img/icon.svg" alt="Icono">
                 <p>Open Log</p>
             </div>
         </a>
         <Nav Class="LogIn">
-            <a href="info" class="help">
+            <a routerLink="/info" class="help">
                 <span class="material-icons-outlined">
                     help_outline
                 </span>
@@ -20,12 +20,12 @@
             </span>
         </Nav>
     </div>
-    <div *ngIf="Login">
+    <div *ngIf="Login==true">
         <app-login></app-login>
     </div>
     <Nav class="optionBar">
-        <a href="/Compra" class="option compra">Compra</a>
-        <a href="/Diseño" class="option diseña">Diseña</a>
+        <a routerLink="/Compra" routerLinkActive="active-option" class="option compra">Compra</a>
+        <a routerLink="/Diseño" routerLinkActive="active-option" class="option diseña">Diseña</a>
     </Nav>
     <aside id="pedidos">
         <div class="cerrar"(click)="ActivarPedidos()">x</div>

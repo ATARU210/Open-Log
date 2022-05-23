@@ -53,7 +53,8 @@
 .text-box{
     display: flex;
     align-items: center;
-    background-color: #a11fdd9c;
+    background-color: #8a26b8a9;
+    box-shadow: 0px 0px 70px 0px #8125accc;
     border-radius: 3rem;
     font-size: 2vh;
     line-height: 50px;
@@ -74,7 +75,7 @@
     margin: 0 auto;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to bottom, #ca70f37e, #ac45db65),url(/assets/img/background.jpg);
+    background-image: linear-gradient(to bottom, #a14fc79f, #8a26b85b),url(/assets/img/background.jpg);
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
